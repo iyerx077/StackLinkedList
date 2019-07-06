@@ -1,5 +1,3 @@
-//simple stack class implemented in a linked list way through java
-//implemented such that no modules were imported
 public class Stack1 {
 
     private Stack1 start = null; //start begins at the null pointer and thus is equal to null
@@ -21,17 +19,17 @@ public class Stack1 {
         return data;
     }
 
-    /*public void setData(Object o){
+    public void setData(Object o){
         data = o;
-    }*/
+    }
 
     public Stack1 getNext(){
         return next;
     }
 
-    /*public void setNext(Stack1 link){
+    public void setNext(Stack1 link){
         next = link;
-    }*/
+    }
 
     public void push(Object o) {
         start = new Stack1(o, start);
@@ -74,3 +72,5 @@ public class Stack1 {
 
 
 }
+
+    // instance variables
