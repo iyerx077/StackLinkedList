@@ -1,16 +1,16 @@
-public class Stack1 {
+public class Stack {
 
     private Stack1 start = null; //start begins at the null pointer and thus is equal to null
     private Object data; //data is the variable that is linked to the pointer and the next element
-    private Stack1 next; //next is the pointer after start; the first element pushed links next to start
+    private Stack next; //next is the pointer after start; the first element pushed links next to start
 
     // constructor
 
-    public Stack1() {}
+    public Stack() {}
     
     // selectors
 
-    public Stack1(Object o, Stack1 link){
+    public Stack(Object o, Stack link){
         data = o;
         next = link;
     }
@@ -24,7 +24,7 @@ public class Stack1 {
     }
 
     public void push(Object o) {
-        start = new Stack1(o, start);
+        start = new Stack(o, start);
     }
 
     public Object pop() {
@@ -44,7 +44,7 @@ public class Stack1 {
     }
 
     public static void main(String[] args){
-        Stack1 s = new Stack1();
+        Stack s = new Stack();
         s.push("Hello again");
         s.push("This is line 2");
         s.push("This is line 3");
