@@ -19,16 +19,8 @@ public class Stack1 {
         return data;
     }
 
-    public void setData(Object o){
-        data = o;
-    }
-
     public Stack1 getNext(){
         return next;
-    }
-
-    public void setNext(Stack1 link){
-        next = link;
     }
 
     public void push(Object o) {
@@ -36,13 +28,9 @@ public class Stack1 {
     }
 
     public Object pop() {
-        if (start == null)
-          throw new RuntimeException("Tried to pop an empty stack");
-        else {
           data = start.getData();
           start = start.getNext();
           return data;
-        }
     }
 
     public Object top() {
