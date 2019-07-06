@@ -1,6 +1,6 @@
 public class Stack {
 
-    private Stack1 start = null; //start begins at the null pointer and thus is equal to null
+    private Stack start = null; //start begins at the null pointer and thus is equal to null
     private Object data; //data is the variable that is linked to the pointer and the next element
     private Stack next; //next is the pointer after start; the first element pushed links next to start
 
@@ -19,7 +19,7 @@ public class Stack {
         return data;
     }
 
-    public Stack1 getNext(){
+    public Stack getNext(){
         return next;
     }
 
